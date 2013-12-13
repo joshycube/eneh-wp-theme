@@ -1,0 +1,86 @@
+/* smallest and global */
+.wrap {
+	font-size: 16px;
+	max-width: 12.5em;
+}
+h3.option-item {
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	-moz-box-shadow: inset 0 1px 0 #fff;
+	-webkit-box-shadow: inset 0 1px 0 #fff;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	box-shadow: inset 0 1px 0 #fff;
+	padding: 0 0 0 10px;
+	margin: 20px 0 0 0;
+	border:1px solid #dfdfdf;
+	background: #f5f5f5;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#f5f5f5), to(#f9f9f9));
+	background-image: -webkit-linear-gradient(bottom, #f5f5f5, #f9f9f9);
+	background-image: -moz-linear-gradient(bottom, #f5f5f5, #f9f9f9);
+	background-image:-o-linear-gradient(bottom, #f5f5f5, #f9f9f9);
+	background-image: linear-gradient(to top, #f5f5f5, #f9f9f9);
+	height: 34px;
+	line-height: 34px;
+	font-size: 15px;
+	font-weight: normal;
+
+}
+h3.option-item a {
+	/*background: url(images/arrow-light.png) 99% 50% no-repeat;*/
+	color: #464646;
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	text-decoration: none;
+	display: block;
+	text-shadow: 0 1px 0 #fff;
+}
+.option-container {display:none;font-size:16px;}
+
+.option-container input[type="radio"]{}
+.option-container label{color:#777;}
+.option-container { 
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding:8px;
+	line-height:2.5em;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px; 
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border: 1px solid #dfdfdf;
+	border-top: none;
+	background: #fcfcfc;
+	overflow: hidden;
+	font-size: 12px;
+	clear: both;
+	color: #333;
+
+}
+/*.option-item:after{content: "MOBILE";}*/
+
+/* large */
+@media screen and (min-width: 50em) {
+
+	.wrap {
+		max-width:105em;
+	}
+	/*.option-item:after{content: "DESKTOP";}*/
+ 
+}
+
+/* small */
+@media screen and (min-width: 50em) and (max-width: 63.236em) {
+
+	.wrap {
+		width:50em;
+	}
+	/*.option-item:after{content: "TABLET";}*/
+
+}
+ 

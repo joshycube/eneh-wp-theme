@@ -1,0 +1,389 @@
+/*
+Theme Name: Eneh
+Text Domain: eneh
+Theme URI: http://www.developingforcharity.co.uk
+Description: Enéh Wordpress theme
+Version: 1.0.0
+Author: Jozsef Mark Komjati - joshy
+Author URI: http://www.codegarage.net
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 75%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  line-height: 1.75em;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+p,
+pre {
+  margin: 1.75em 0;
+}
+
+blockquote {
+  margin: 1.75em 40px;
+}
+
+h1 {
+  font-size: 1.857em;
+  line-height: 1.88476em;
+  margin-top: 0.94238em;
+  margin-bottom: 0.94238em;
+}
+
+h2 {
+  font-size: 1.428em;
+  line-height: 2.45098em;
+  margin-top: 1.22549em;
+  margin-bottom: 1.22549em;
+}
+
+h3 {
+  font-size: 1.143em;
+  line-height: 1.53106em;
+  margin-top: 1.53106em;
+  margin-bottom: 1.53106em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+h5 {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+h6 {
+  font-size: 0.857em;
+  line-height: 2.04201em;
+  margin-top: 2.04201em;
+  margin-bottom: 2.04201em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 0;
+}
+
+mark {
+  background: yellow;
+  color: black;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "Courier New", monospace;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1.75em 0;
+  padding: 0 0 0 40px;
+}
+
+dl {
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border-color: silver;
+  margin: 0 2px;
+  border-top-style: solid;
+  border-top-width: 0.08333em;
+  padding-top: 0.52917em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.08333em;
+  padding-bottom: 1.05417em;
+  border-left-style: solid;
+  border-left-width: 0.08333em;
+  padding-left: 1.01042em;
+  border-right-style: solid;
+  border-right-width: 0.08333em;
+  padding-right: 1.01042em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 100%;
+  background: #eeeeee;
+  color: black;
+}
+body a:visited,
+body a:hover,
+body a:link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#container {
+  margin: 0 auto;
+  width: 26em;
+}
+
+.post {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 1.167em;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 7px 7px;
+  -moz-border-radius: 7px / 7px;
+  border-radius: 7px / 7px;
+  -webkit-box-shadow: 0px 1px 2px rgba(221, 221, 221, 0.2) inset, 0px -1px 2px rgba(221, 221, 221, 0.2) inset;
+  -moz-box-shadow: 0px 1px 2px rgba(221, 221, 221, 0.2) inset, 0px -1px 2px rgba(221, 221, 221, 0.2) inset;
+  box-shadow: 0px 1px 2px rgba(221, 221, 221, 0.2) inset, 0px -1px 2px rgba(221, 221, 221, 0.2) inset;
+  color: #404040;
+}
+.post a:visited,
+.post a:hover,
+.post a:link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footer {
+  width: 100%;
+  clear: both;
+}
+
+@media screen and (min-width: 50em) {
+  #container {
+    width: 980px;
+  }
+
+  nav {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  #footer {
+    width: 980px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 50em) and (max-width: 63.236em) {
+  #container {
+    width: 90%;
+  }
+}

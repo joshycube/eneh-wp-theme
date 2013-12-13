@@ -1,0 +1,49 @@
+//Default
+#container
+  margin: 0 auto
+  width: 26em
+
+.post 
+  @include box-sizing(border-box)
+  margin: 0 auto
+  font-size: 1.167em
+  background: #ffffff
+  padding-left: 10px
+  padding-right: 10px
+  padding-top: 5px
+  padding-bottom: 5px
+  border: 1px solid #ddd
+  @include border-radius(7px, 7px)
+  @include box-shadow(0px 1px 2px rgba(#ddd, 0.2) inset, 0px -1px 2px rgba(#ddd, 0.2) inset)
+  color: #404040
+  a:visited,
+  a:hover,
+  a:link
+    color: #000
+    font-weight: bold
+    text-decoration: none
+
+#footer
+  width: 100%
+  clear: both 
+
+//Daddy bear above 600
+@media screen and (min-width: $lmin)
+  body
+    //background: brown
+  #container
+    width: 980px
+
+  nav
+    width: 980px
+    margin: 0 auto
+
+  #footer
+    width: 980px
+    margin: 0 auto
+    
+//Mummy bear 600 - 756
+@media screen and (min-width: $smin) and (max-width: $smax)
+  #container
+    width: 90%
+  

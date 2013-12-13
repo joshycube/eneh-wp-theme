@@ -1,0 +1,21 @@
+/*!
+Theme Name: Eneh
+Text Domain: eneh
+Theme URI: http://www.developingforcharity.co.uk
+Description: Enéh Wordpress theme
+Version: 1.0.0
+Author: Jozsef Mark Komjati - joshy
+Author URI: http://www.codegarage.net
+*/
+
+@import "compass/support";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/shared";
+@import "compass/css3"; 
+
+@import "settings";
+@import "normalize";
+
+@import "modules/body";
+@import "modules/layout";
+

@@ -1,0 +1,14 @@
+Best practices
+
+1.) Header with meta tags, conditionals and mobile settings
+2.) Async jQuery or Zepto (optional)
+3.) Fluid design and erms (?) support
+4.) Adaptive image support out of the box
+5.) Mobile menu support
+6.) Sass based
+7.) Media query best practices to support devices
+8.) Separate CSS file for fonts
+
+9.) Menu and submenu optional
+
+
