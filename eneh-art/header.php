@@ -22,6 +22,8 @@ if ( !defined('ABSPATH')) exit;
 
 <?php wp_enqueue_style('eneh', get_stylesheet_uri(), false, '1.0.0');?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5.js"></script>
 
 <?php wp_head(); ?>
 </head>
@@ -32,25 +34,20 @@ if ( !defined('ABSPATH')) exit;
  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 
-<nav class="top-bar" data-topbar>
+<nav class="top-bar">
     <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-        <h1>
-          <a href="#">
-            Top Bar Title
-          </a>
-        </h1>
+      <li class="hide">
+        <a id="artist-icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artist-icon.png" /></a>
       </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+      <li>
+        <h1 class="noton-small"><a id="artist-name" href="/"><?=get_bloginfo('name'); ?></a></h1>
+      </li>
     </ul>
- 
     <section class="top-bar-section">
-      <!-- Right Nav Section -->
       <ul class="right">
 	<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu' ) ); ?>
       </ul>
     </section>
-  </nav>
+</nav>
 
 <div id="container">

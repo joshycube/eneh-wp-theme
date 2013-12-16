@@ -2,31 +2,78 @@ var ENEH = namespace("ENEH");
 
 ENEH.site = (function ($, doc, win, eneh) {
 
-  listeners = function() {
+  parallax = function() {
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this);
+        $(win).scroll(function() {
+            var yPos = -($(win).scrollTop() / $bgobj.data('speed')); 
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        }); 
+    }); 
   }
   
-  window.onload = function(){
-    listeners();
-  };
+  jumpTo = function() {
+    $('.jumpto').on('click', function() {
+      var dest = $(this).data('destination');
+      $('html, body').animate({
+	scrollTop: dest
+      }, 600);
+    });
+  }
   
-  resizeFooter = function() {
-    
-    if(window.innerWidth <= 800) {
-      var element = $('#content, .pressWrap').jScrollPane({});
-	if(element.length > 0) {
-	  var api = element.data('jsp');
+  menuChange = function() {
+  
+    var scrolled = false;
+  
+    $(win).scroll(function() {
 
-	  api.destroy(); 
+      if(this.scrollY >= 800 && scrolled === false) {
+      
+	$("#artist-name").animate({
+	  opacity: 0.55,
+	}, 10, function() {
+	  $('#artist-icon').parent().removeClass('hide');
+	  scrolled = true;
+	});
+      
+      } else if(scrolled === true && this.scrollY <= 500) {
+      
+	$("#artist-name").animate({
+	  opacity: 0.55,
+	}, 10, function() {
+	  $('#artist-icon').parent().addClass('hide');
+	  scrolled = false;
+	});
 	
       }
-    }
-    
-  };
-  	
-  $(window).load(resizeFooter);
-  $(window).resize(resizeFooter);
+    });
+  }
+  
+  bouncingImages = function() {
+    $('#art-categories').find('img').on('mouseover', function() {
+      $(this).animate({
+	top: "+=25",
+      }, 500)
+    }).on('mouseleave', function() {
+      $(this).animate({
+	top: "0",
+      }, 500)
+    });
+  }
+  
+  listeners = function() {
+    jumpTo();
+    menuChange();
+    bouncingImages();
+  }
 	  
-  return {};
+  return {
+    parallax: parallax,
+    listeners: listeners
+  };
 
 }(jQuery, document, window, ENEH));
 
@@ -48,8 +95,6 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
      
     });
   }
-  
-  jQuery('#content, .pressWrap').jScrollPane();
   
   window.onload = function(){
     listeners();
@@ -73,3 +118,6 @@ function namespace(namespaceString) {
 
   return parent;
 }
+
+ENEH.site.parallax();
+ENEH.site.listeners();

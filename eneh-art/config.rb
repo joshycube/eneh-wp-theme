@@ -1,6 +1,6 @@
 # Require any additional compass plugins here.
 
-require "zurb-foundation"
+require "compass-normalize"
 
 http_path = "/"
 css_dir = "/"

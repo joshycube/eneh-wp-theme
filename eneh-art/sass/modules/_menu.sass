@@ -1,0 +1,59 @@
+nav.top-bar
+  padding: 0 0.416em 0 0.416em
+  height: 2.8125em
+  position: fixed
+  top: 0
+  z-index: 1
+  width: 100%
+  background: $widget-bg
+  display: block
+  @include opacity(0.8)
+  
+  section
+    @include fc(8)
+    ul
+      margin: 0.375em 0 0 0
+      vertical-align: middle
+      
+      a
+        text-transform: uppercase
+        font-size: 1.083em
+  
+  ul.title-area
+    @include fc(4)
+    margin: 0
+    padding: 0
+    li
+      h1
+        margin: 0
+        padding: 0
+        color: #fff
+        a
+          font-family: 'Source Sans Pro', cursive
+          color: #000
+          text-decoration: none
+          @include opacity(0.55)
+
+#menu-main
+  li
+    display: inline
+    padding-left: 0.667em
+  
+.title-area
+  li
+    display: block
+    float: left
+
+#artist-icon
+  display: block
+  margin: 0.25em 1em 0 0
+  
+.artistic
+  width: 6.25em
+  margin: 0 auto
+  padding: 0.625em
+  @include single-box-shadow(#fff, 0.5px, 1px, 0.5px, 2px)
+  display: block
+  color: #fff
+  text-transform: uppercase
+  font-size: 1.3em

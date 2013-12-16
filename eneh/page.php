@@ -1,13 +1,10 @@
 <?php get_header(); ?>
- 
-    <div id="innerWrap">
+<section id="page">
+      <article>
         <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
          
-        <div class="post">
-        <h3 class="hide"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
- 
- 
-            <div class="entry">
+	    <header><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></header>
+
             <?php the_content(); ?>
  
 	    <?php $meta_opt = get_option('eneh_layout_page_met'); ?>
@@ -21,18 +18,18 @@
 		
 	    <?php endif; ?>
  
-            </div>
- 
         </div>
          
-<?php endwhile; ?>
- 
-    <div class="navigation">
-        <?php posts_nav_link(); ?>
-    </div>
- 
-<?php endif; ?>
-</div>
+	<?php endwhile; ?>
+	
+	    <footer>
+		<?php posts_nav_link(); ?>
+	    </footer>
+	
+	<?php endif; ?>
+      </article>
+
+</section>
  
 <?php get_sidebar(); ?>  
 <?php get_footer(); ?>

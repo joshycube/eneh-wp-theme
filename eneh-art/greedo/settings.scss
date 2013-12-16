@@ -1,0 +1,27 @@
+/* Grid settings  */
+$cols: 12;
+$col-width: 76;
+$gutter-width: 4;
+
+/* Breakpoints */
+@mixin breakpoint($point) {
+  @if $point == daddy { 
+   //min 531.776px
+   @media screen and (min-width: 33.236em) {
+      @content;   
+    }
+  }
+  //between 480px and 1011.776px
+  @else if $point == mammy {
+    @media screen and (min-width: 30em) and (max-width: 63.236em) {
+      @content; 
+    }
+  }
+  //max 767px
+  @else if $point == baby {
+    @media only screen and (max-width: 47.9375em) {
+      @content; 
+    }
+  }
+}
+

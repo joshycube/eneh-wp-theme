@@ -1,0 +1,25 @@
+body
+  font-size: 100%
+  background: url(img/bg1_old.png) 50% 0 repeat fixed
+
+a
+  color: #000
+  text-decoration: none
+  
+footer
+  bottom: 0
+  position: fixed
+  height: 2.8125em
+  padding: 0.5em
+  width: 100%
+  font-size: 0.8125em
+  @include box-sizing("border-box")
+  background: $widget-bg
+  p
+    @include fc(4)
+    ul li
+      @include fc(2)
+  
+.right
+  text-align: right
+  float: right!important
