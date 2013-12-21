@@ -7,6 +7,7 @@ a
   text-decoration: none
   
 footer
+  display: none
   bottom: 0
   position: fixed
   height: 2.8125em
@@ -14,6 +15,7 @@ footer
   width: 100%
   font-size: 0.8125em
   @include box-sizing("border-box")
+  @include single-box-shadow(#000, 1px, 1px, 10px, 1px)
   background: $widget-bg
   p
     @include fc(4)

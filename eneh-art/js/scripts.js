@@ -36,6 +36,7 @@ ENEH.site = (function ($, doc, win, eneh) {
 	  opacity: 0.55,
 	}, 10, function() {
 	  $('#artist-icon').parent().removeClass('hide');
+	  $('footer').show(1000);
 	  scrolled = true;
 	});
       
@@ -45,6 +46,7 @@ ENEH.site = (function ($, doc, win, eneh) {
 	  opacity: 0.55,
 	}, 10, function() {
 	  $('#artist-icon').parent().addClass('hide');
+	  $('footer').hide();
 	  scrolled = false;
 	});
 	

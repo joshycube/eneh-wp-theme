@@ -4,24 +4,31 @@ $col-width: 76;
 $gutter-width: 4;
 
 /* Breakpoints */
-@mixin breakpoint($point) {
-  @if $point == daddy { 
-   //min 531.776px
-   @media screen and (min-width: 33.236em) {
+@mixin bp($point) {
+  
+  @if $point == deathstar { 
+   @media screen and (min-width: 78.75em) {
       @content;   
     }
   }
-  //between 480px and 1011.776px
-  @else if $point == mammy {
-    @media screen and (min-width: 30em) and (max-width: 63.236em) {
+
+  @else if $point == stardestroyer {
+    @media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
       @content; 
     }
   }
-  //max 767px
-  @else if $point == baby {
-    @media only screen and (max-width: 47.9375em) {
+
+  @else if $point == atat {
+    @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
       @content; 
     }
   }
+  
+  @else if $point == tiefighter {
+    @media only screen and (max-width: 33.875em) {
+      @content; 
+    }
+  }
+  
 }
 

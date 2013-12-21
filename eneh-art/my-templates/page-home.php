@@ -15,7 +15,7 @@ Template Name: Home
 	  <?php endwhile; ?>
 	<?php endif; ?>
    
-    <a class="button artistic brown jumpto" data-destination="1000">Galéria</a>
+    <!--<a class="button artistic brown jumpto" data-destination="1000">Galéria</a>-->
   </article>
 </section>
 
