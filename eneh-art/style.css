@@ -419,6 +419,36 @@ nav.top-bar ul.title-area li h1 a {
   font-size: 1.3em;
 }
 
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
+@media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
+  .non-tie {
+    display: none;
+  }
+
+  .title-area .hide {
+    display: block !important;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
+@media only screen and (max-width: 33.875em) {
+  .non-tie {
+    display: none;
+  }
+
+  .title-area .hide {
+    display: block !important;
+  }
+}
 body {
   font-size: 100%;
   background: url(img/bg1_old.png) 50% 0 repeat fixed;
@@ -429,7 +459,7 @@ a {
   text-decoration: none;
 }
 
-footer {
+#end {
   display: none;
   bottom: 0;
   position: fixed;
@@ -445,13 +475,13 @@ footer {
   box-shadow: 1px 1px 10px 1px black;
   background: #beae9d;
 }
-footer p {
+#end p {
   display: inline-block;
   float: left;
   width: 32.01754% !important;
   margin: 0 0.65789%;
 }
-footer p ul li {
+#end p ul li {
   display: inline-block;
   float: left;
   width: 16.22807% !important;
@@ -461,6 +491,10 @@ footer p ul li {
 .right {
   text-align: right;
   float: right !important;
+}
+
+#category {
+  padding-top: 3.125em;
 }
 
 #welcome {
@@ -525,6 +559,12 @@ footer p ul li {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
 @media screen and (min-width: 78.75em) {
   #art article {
     height: 6.25em;
@@ -551,6 +591,12 @@ footer p ul li {
     clear: left;
   }
 }
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
 @media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
   #art article {
     height: 6.25em;
@@ -576,6 +622,12 @@ footer p ul li {
     clear: left;
   }
 }
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
 @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
   #art article {
     height: 6.25em;
@@ -601,6 +653,12 @@ footer p ul li {
     clear: left;
   }
 }
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
 @media only screen and (max-width: 33.875em) {
   #art {
     min-height: 106.25em;
@@ -644,6 +702,119 @@ img.framed {
 }
 #art ul li a img {
   position: relative;
+}
+
+#category {
+  width: 100%;
+  margin: 0 auto;
+  /*background: green */
+  min-height: 1000px;
+}
+
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
+@media screen and (min-width: 78.75em) {
+  #category, #eneh-slide {
+    width: 75em;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
+@media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
+  #category, #eneh-slide {
+    width: 60em;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
+@media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
+  #category, #eneh-slide {
+    width: 37.5em;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * 
+ */
+@media only screen and (max-width: 33.875em) {
+  #category, #eneh-slide {
+    width: 18.75em;
+  }
+}
+.art-show {
+  text-align: center;
+  display: inline-block;
+  float: left;
+  width: 95.17544% !important;
+  margin: 0 2.41228%;
+}
+.art-show h1 {
+  margin-bottom: 0.9375em;
+  color: white;
+}
+.art-show p {
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-control {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background: #beae9d;
+  display: block;
+  -webkit-box-shadow: 1px 1px 10px 1px black;
+  -moz-box-shadow: 1px 1px 10px 1px black;
+  box-shadow: 1px 1px 10px 1px black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  z-index: 1;
+  height: 11.25em;
+  width: 100%;
+}
+
+#eneh-slide {
+  /*background: red */
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+}
+#eneh-slide .art-slide {
+  valign: center;
+  display: inline-block;
+  margin: 0.625em 0.9375em 0 0.9375em;
+}
+
+#step-left {
+  position: absolute;
+  left: 0;
+  display: block;
+}
+
+#step-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: 2;
 }
 
 .enehGal {

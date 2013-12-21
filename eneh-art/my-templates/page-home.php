@@ -31,7 +31,7 @@ Template Name: Home
 	<h3>Csendélet</h3>
       </li>
       <li>
-	<a href=""><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/landscape.jpg" /></a>
+	<a href="/category/art/landscape"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/landscape.jpg" /></a>
 	<h3>Tájkép</h3>
       </li>
       <li>

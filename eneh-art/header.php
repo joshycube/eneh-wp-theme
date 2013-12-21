@@ -21,9 +21,9 @@ if ( !defined('ABSPATH')) exit;
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <?php wp_enqueue_style('eneh', get_stylesheet_uri(), false, '1.0.0');?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5.js"></script>
 
 <?php wp_head(); ?>
 </head>
@@ -40,7 +40,7 @@ if ( !defined('ABSPATH')) exit;
         <a id="artist-icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artist-icon.png" /></a>
       </li>
       <li>
-        <h1 class="noton-small"><a id="artist-name" href="/"><?=get_bloginfo('name'); ?></a></h1>
+        <h1 class="non-tie"><a id="artist-name" href="/"><?=get_bloginfo('name'); ?></a></h1>
       </li>
     </ul>
     <section class="top-bar-section">
@@ -50,4 +50,4 @@ if ( !defined('ABSPATH')) exit;
     </section>
 </nav>
 
-<div id="container">
+<main id="container">

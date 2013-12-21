@@ -6,24 +6,35 @@ $gutter-width: 4;
 /* Breakpoints */
 @mixin bp($point) {
   
+  /* 
+   * 
+   * Breakpoints should be determined by content not by devices.
+   * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+   * 
+   */
+  
+  //1260px <
   @if $point == deathstar { 
    @media screen and (min-width: 78.75em) {
       @content;   
     }
   }
 
+  //1260px > and > 975px
   @else if $point == stardestroyer {
     @media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
       @content; 
     }
   }
 
+  //975px > and > 542px
   @else if $point == atat {
     @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
       @content; 
     }
   }
   
+  //542px >
   @else if $point == tiefighter {
     @media only screen and (max-width: 33.875em) {
       @content; 

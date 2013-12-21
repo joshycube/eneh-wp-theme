@@ -82,20 +82,7 @@ ENEH.site = (function ($, doc, win, eneh) {
 ENEH.enehgal = (function ($, doc, win, eneh) {
 	
   listeners = function() {
-    $('.enehGal ul li img').click('live', function() {
-      var medium = $(this).data('medium');
-      var orig = $(this).data('orig');
-      var coverParent = $('#enehGalCover').parent();
-      var imgIndex = $(this).parent().index()+1;
-      
-      /*$('#enehGalCover').fadeOut(577, function() { 
-	$('#enehGalCover').attr('src', medium);
-	$(coverParent).attr('href', orig);
-	$(coverParent).attr('data-lightbox', 'image-'+imgIndex);
-	$('#enehGalCover').fadeIn(577);
-      });*/
-     
-    });
+   
   }
   
   window.onload = function(){

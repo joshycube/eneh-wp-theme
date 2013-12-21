@@ -7,9 +7,12 @@
   set_post_thumbnail_size(520, 250, true);
     
   if ( function_exists( 'add_image_size' ) ) { 
-    add_image_size( 'enehgal-small', 50, 50, true );
-    add_image_size( 'enehgal-med', 360, 360, true );
-    add_image_size( 'press-tmb', 90, 130, true );
+    add_image_size( 'enehgal-smallest', 50, false);
+    add_image_size( 'enehgal-smaller', 150, false);
+    add_image_size( 'enehgal-small', 250, false);
+    add_image_size( 'enehgal-med', 500, false );
+    add_image_size( 'enehgal-large', 900, false );
+    add_image_size( 'enehgal-larger', 1000, false );
   }
   
   //wp_enqueue_style('parent', get_template_directory_uri() . '/style.css',false,'1.1','all');

@@ -1,5 +1,5 @@
-<!-- end of container div --></div>
-<footer>
+<!-- end of container div --></main>
+<footer id="end">
   <p>Máté Sándor &copy;</p>
   <p>Created by Joshy - http://www.codegarage.net</p>
   <p>
@@ -14,7 +14,7 @@
 <?php if($meta_opt == "jquery"): ?>
  
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-1.9.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js"><\/script>')</script>
 
 <?php else: ?>
 
@@ -22,6 +22,7 @@
 
 <?php endif; ?>
 
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/console.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/console.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/responsive-images.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
 </body>
