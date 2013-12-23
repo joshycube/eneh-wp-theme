@@ -51,13 +51,15 @@
 </section>
 
 <aside class="bottom-control">
- <a id="step-left">Left</a>
+ <a class="eneh-step" id="step-left">&laquo;</a>
+ <div id="eneh-mask">
  <ul id="eneh-slide">
-  <?php foreach($imgs as $img): ?>
-    <li class="art-slide"><a><img class="framed" src="<?=$img['sizes']['thumbnail']; ?>" /></a></li>
-  <?php endforeach; ?>
+  <?php $max = count($imgs); $i = 0; foreach($imgs as $img): ?>
+    <li data-index="<?=$i;?>" class="<?php if($i == 0): ?>first <?php elseif($i == $max-1): ?>last <?php endif; ?>art-slide"><a><img class="framed" src="<?=$img['sizes']['thumbnail']; ?>" /></a></li>
+  <?php $i++; endforeach; ?>
  </ul>
- <a id="step-right">Right</a>
+ </div>
+ <a class="eneh-step" id="step-right">&raquo;</a>
 </aside>
 
 <?php get_footer(); ?>

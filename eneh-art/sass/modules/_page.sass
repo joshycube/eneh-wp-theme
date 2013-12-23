@@ -13,11 +13,15 @@
     padding: 0.5em 0 0.5em 0
     @include opacity(0.9)
     @include single-box-shadow(#000, 1px, 1px, 10px, 1px)
-    
+
   h1
     color: #fff
     text-shadow: 1px 1px 0 #000 
- 
+
+#about
+  p
+    color: #fff
+    
 #welcome,
 #about
   article
@@ -34,7 +38,7 @@
       @include fc(3)
     p
       @include fc(9)
-      
+ 
 #art
   background: url(img/bg2.png) 50% 0 repeat fixed 
   min-height: 62.5em 
@@ -86,6 +90,21 @@
           clear: left
 
 @include bp(atat)
+  #about
+    article
+      p:first-child
+        clear: both
+        float: none
+        text-align: center
+        @include fc(12)
+        margin-bottom: 2.5em
+      p
+        clear: both
+        width: 100%
+        float: none
+        color: #fff
+        @include fc(12)
+      
   #art
     article
       height: 6.25em
@@ -105,6 +124,20 @@
           clear: left
           
 @include bp(tiefighter)
+  #about
+    article
+      p:first-child
+        clear: both
+        float: none
+        text-align: center
+        @include fc(12)
+        margin-bottom: 2.5em
+      p
+        clear: both
+        width: 100%
+        float: none
+        color: #fff
+        @include fc(12)
   #art
     min-height: 106.25em
     article

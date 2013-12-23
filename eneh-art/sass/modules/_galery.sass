@@ -3,23 +3,30 @@
   margin: 0 auto
   /*background: green*/
   min-height: 1000px
+  height: 100em
 
 @include bp(deathstar)
-  #category, #eneh-slide
+  #category, #eneh-mask
     width: 75em
   
 @include bp(stardestroyer)
-  #category, #eneh-slide
+  #category
     width: 60em
-  
+  #eneh-mask
+    width: 37.59375em
+    
 @include bp(atat)
-  #category, #eneh-slide
+  #category
     width: 37.5em
+  #eneh-mask
+    width: 37.59375em
   
 @include bp(tiefighter)
-  #category, #eneh-slide
+  #category
     width: 18.75em
-  
+  #eneh-mask
+    width: 12.53125em
+    
 .art-show
   text-align: center
   @include fc(12)
@@ -40,20 +47,34 @@
   background: $widget-bg
   display: block
   @include single-box-shadow(#000, 1px, 1px, 10px, 1px)
-  @include opacity(0.7)
   z-index: 1
   height: 11.25em
   width: 100%
+  
+#eneh-mask
+  margin: 0 auto
+  overflow: hidden
+  height: 200px
 
+.eneh-step
+  font-size: 2em
+  cursor: pointer
+  padding: 0.1875em
+  color: #000
+  margin-top: 2em
+  background: #fff
+  
 #eneh-slide
   /*background: red*/
   clear: both
-  text-align: center
+  position: relative
   margin: 0 auto
+  width: 9999px
   .art-slide
     valign: center
     display: inline-block
-    margin: 0.625em 0.9375em 0 0.9375em
+    float: left
+    margin: 0.625em 1.15625em 0 1.15625em
 
 #step-left
   position: absolute
