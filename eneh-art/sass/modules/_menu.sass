@@ -1,3 +1,7 @@
+.header-menu
+  padding-top: 0.625em
+  z-index: 9999
+  
 nav.top-bar
   padding: 0 0.416em 0 0.416em
   height: 2.8125em
@@ -10,12 +14,10 @@ nav.top-bar
   @include single-box-shadow(#000, 1px, 1px, 10px, 1px)
   @include opacity(0.9)
   
-  section
+  .top-bar-section
     @include fc(8)
     ul
-      margin: 0.375em 0 0 0
       vertical-align: middle
-      
       a
         text-transform: uppercase
         font-size: 1.083em
@@ -35,7 +37,26 @@ nav.top-bar
           text-decoration: none
           @include opacity(0.55)
 
+.hamburger
+  display: none
+  border: 2px solid #fff
+  padding: 0.3125em
+  width: 2em
+  height: 2em
+  cursor: pointer
+  @include box-sizing("border-box")
+  li
+    display: block
+    width: 100%
+    height: 0.1875em
+    background: #fff
+    margin-bottom: 0.3125em
+    
+section:hover div ul
+  display: block!important
+           
 #menu-main
+  z-index: 9999
   li
     display: inline
     padding-left: 0.667em
@@ -60,15 +81,65 @@ nav.top-bar
   font-size: 1.3em
   
 @include bp(atat)
-  .non-tie
+  .menu-icon
+    display: block
+    margin-top: 0.3125em     
+  .hamburger
+    display: block
+  .top-bar section.top-bar-section
+    width: 3.125em
+    float: right
+  #menu-main
+    position: relative
+    right: 0
+    display: none
+    @include box-sizing("border-box")
+    background: #fff
+    width: 15.625em
+    li
+      display: inline-block
+      width: 15.625em
+      padding: 0
+      text-align: center
+      a
+        display: block
+        padding: 1em 0 1em 0
+        &:hover
+          background: #BEAE9D
+  .non-atat
     display: none
   .title-area
     .hide
       display: block!important
   
 @include bp(tiefighter)
-  .non-tie
+  .menu-icon
+    display: block
+    margin-top: 0.3125em 
+  .hamburger
+    display: block
+  .top-bar section.top-bar-section
+    width: 3.125em
+    float: right
+  #menu-main
+    position: relative
+    right: 0
     display: none
+    @include box-sizing("border-box")
+    background: #fff
+    width: 15.625em
+    li
+      display: inline-block
+      width: 15.625em
+      padding: 0
+      text-align: center
+      a
+        display: block
+        padding: 1em 0 1em 0
+        &:hover
+          background: #BEAE9D
+  .non-tie
+    display: none!important
   .title-area
     .hide
       display: block!important

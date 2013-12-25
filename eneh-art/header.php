@@ -34,19 +34,33 @@ if ( !defined('ABSPATH')) exit;
  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=299185600214658";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <nav class="top-bar">
     <ul class="title-area">
       <li class="hide">
         <a id="artist-icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artist-icon.png" /></a>
       </li>
       <li>
-        <h1 class="non-tie"><a id="artist-name" href="/"><?=get_bloginfo('name'); ?></a></h1>
+        <h1 class="non-tie non-atat"><a id="artist-name" href="/"><?=get_bloginfo('name'); ?></a></h1>
       </li>
     </ul>
     <section class="top-bar-section">
-      <ul class="right">
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu' ) ); ?>
-      </ul>
+      <a class="menu-icon">
+	<ul class="hamburger">
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	</ul>
+      </a>
+      <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu right' ) ); ?>
     </section>
 </nav>
 

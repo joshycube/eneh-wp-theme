@@ -24,6 +24,6 @@
 @mixin fc($c, $col-width:$col-width) {
   display: inline-block;
   float: left;
-  width: _calc-width($c, "%", $col-width, $gutter-width) !important;
+  width: _calc-width($c, "%", $col-width, $gutter-width);
   margin: 0 _calc-margin($c, "%", $col-width, $gutter-width);
 }

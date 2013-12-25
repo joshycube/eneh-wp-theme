@@ -27,31 +27,38 @@ ENEH.site = (function ($, doc, win, eneh) {
   menuChange = function() {
   
     var scrolled = false;
+    console.log( win.location.pathname);
+    
+    if(win.location.pathname === '/') {
   
-    $(win).scroll(function() {
+      $(win).scroll(function() {
 
-      if(this.scrollY >= 800 && scrolled === false) {
-      
-	$("#artist-name").animate({
-	  opacity: 0.55,
-	}, 10, function() {
-	  $('#artist-icon').parent().removeClass('hide');
-	  $('footer').show(1000);
-	  scrolled = true;
-	});
-      
-      } else if(scrolled === true && this.scrollY <= 500) {
-      
-	$("#artist-name").animate({
-	  opacity: 0.55,
-	}, 10, function() {
-	  $('#artist-icon').parent().addClass('hide');
-	  $('footer').hide();
-	  scrolled = false;
-	});
+	if(this.scrollY >= 800 && scrolled === false) {
 	
-      }
-    });
+	  $("#artist-name").animate({
+	    opacity: 0.55,
+	  }, 10, function() {
+	    $('#artist-icon').parent().removeClass('hide');
+	    $('footer').show(1000);
+	    scrolled = true;
+	  });
+	
+	} else if(scrolled === true && this.scrollY <= 500) {
+	
+	  $("#artist-name").animate({
+	    opacity: 0.55,
+	  }, 10, function() {
+	    $('#artist-icon').parent().addClass('hide');
+	    $('footer').hide();
+	    scrolled = false;
+	  });
+	  
+	}
+      });
+    } else if(win.location.pathname.indexOf('category') === -1) {
+      $('footer').show(1000);
+    }
+    
   }
   
   bouncingImages = function() {
@@ -90,6 +97,11 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
     
     window.onload = function() {
       
+      $('.image-container').on('click', function() {
+	$('.bottom-control').toggle();
+	$('.top-bar').toggle();
+      });
+      
       var slide  = $('#eneh-slide');
    
       $(slide).animate({
@@ -111,10 +123,6 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
 	}, 500, 'linear', function() {
 	  $('#eneh-slide li:first').before($('#eneh-slide li:last'));
 	  $(slide).css({'left' : -200.5});
-	  /*$('#eneh-slide li:first').before($('#eneh-slide li:last')); // <<< different
-	  $('#eneh-slide').css({'left':200.5});                 // <<< different
-	  $('#eneh-slide').animate({'left':0}, 1200, function(){// <<< different
-	  });*/
 	});
       });
       

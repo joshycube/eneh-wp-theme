@@ -1,12 +1,8 @@
 <!-- end of container div --></main>
-<footer id="end">
-  <p>Máté Sándor &copy;</p>
-  <p>Created by Joshy - http://www.codegarage.net</p>
-  <p>
-    <ul>
-    <li><a href="">FB</a></li>
-    </ul>
-  </p>
+<footer id="end" class="non-tie">
+  <div>Created by Joshy - <a href="http://www.codegarage.net" target="_blank">codegarage.net</a></div>
+  <div>Máté Sándor &copy;</div>
+  <div class="fb-like" data-href="<?php the_permalink() ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 </footer>
 
 <?php $meta_opt = get_option('eneh_frontend_jsopt'); ?>
@@ -25,4 +21,5 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/console.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive-images.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
+
 </body>
