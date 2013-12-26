@@ -23,11 +23,11 @@ Template Name: Home
   <article>
     <ul id="art-categories">
       <li>
-	<a href=""><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/portrait.jpg" /></a>
+	<a href="/category/art/portrait"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/portrait.jpg" /></a>
 	<h3>Portrék</h3>
       </li>
       <li>
-	<a href=""><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/still-life.jpg" /></a>
+	<a href="/category/art/still-life"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/still-life.jpg" /></a>
 	<h3>Csendélet</h3>
       </li>
       <li>
@@ -35,15 +35,15 @@ Template Name: Home
 	<h3>Tájkép</h3>
       </li>
       <li>
-	<a href=""><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/moments.jpg" /></a>
+	<a href="/category/art/moments"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/moments.jpg" /></a>
 	<h3>Életképek</h3>
       </li>
       <li>
-	<a href=""><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/other.jpg" /></a>
+	<a href="/category/art/other"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/other.jpg" /></a>
 	<h3>Egyéb</h3>
       </li>
       <li>
-	<a href=""><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/all.jpg" /></a>
+	<a href="/category/art"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/all.jpg" /></a>
 	<h3>Összes</h3>
       </li>
     </ul>

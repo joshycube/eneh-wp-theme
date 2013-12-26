@@ -46,7 +46,7 @@ if ( !defined('ABSPATH')) exit;
 <nav class="top-bar">
     <ul class="title-area">
       <li class="hide">
-        <a id="artist-icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artist-icon.png" /></a>
+        <a id="artist-icon" href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/artist-icon.png" /></a>
       </li>
       <li>
         <h1 class="non-tie non-atat"><a id="artist-name" href="/"><?=get_bloginfo('name'); ?></a></h1>
