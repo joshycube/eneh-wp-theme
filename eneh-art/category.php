@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 <section id="category">
 <?php if(have_posts()) : ?>
@@ -36,8 +35,6 @@
 		  
 		  
 	      <?php $c++; endwhile; ?>
-	      
-	      <?php //var_dump($imgs); ?>
 	
 	  <?php else: ?>
 	   

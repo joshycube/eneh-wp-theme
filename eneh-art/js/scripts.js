@@ -148,11 +148,9 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
       $('.image-container').on('mouseover', function() {
 	$('.bottom-control').hide(500);
 	$('.top-bar').hide(500);
-	$('#menu-main').hide(500);
       }).on('mouseleave', function() {
 	$('.bottom-control').show(500);
 	$('.top-bar').show(500);
-	$('#menu-main').hide(500);
       });
     }
   }
