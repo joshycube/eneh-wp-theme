@@ -27,7 +27,7 @@ ENEH.site = (function ($, doc, win, eneh) {
   menuChange = function() {
   
     var scrolled = false;
-    console.log( win.location.pathname);
+    //console.log( win.location.pathname);
     
     if(win.location.pathname === '/') {
   
@@ -77,6 +77,12 @@ ENEH.site = (function ($, doc, win, eneh) {
     jumpTo();
     menuChange();
     bouncingImages();
+    
+    $('.hamburger').on('click', function() {
+      $('#menu-main').toggle(500);
+      $('.bottom-control').toggle(500);
+    });
+    
   }
 	  
   return {
@@ -98,8 +104,11 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
     window.onload = function() {
       
       $('.image-container').on('click', function() {
-	$('.bottom-control').toggle();
-	$('.top-bar').toggle();
+	if($('#menu-main').css('display') === 'none') {
+	  $('.bottom-control').toggle();
+	  $('.top-bar').toggle();
+	  $('#menu-main').hide(500);
+	}
       });
       
       var slide  = $('#eneh-slide');
@@ -135,7 +144,16 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
 	var nextstage = category.children[index];
 	$(nextstage).addClass('stage-image').removeClass('hide');
       });
-    
+      
+      $('.image-container').on('mouseover', function() {
+	$('.bottom-control').hide(500);
+	$('.top-bar').hide(500);
+	$('#menu-main').hide(500);
+      }).on('mouseleave', function() {
+	$('.bottom-control').show(500);
+	$('.top-bar').show(500);
+	$('#menu-main').hide(500);
+      });
     }
   }
   
