@@ -21,11 +21,15 @@ if ( !defined('ABSPATH')) exit;
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <?php wp_enqueue_style('eneh', get_stylesheet_uri(), false, '1.0.0');?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
 
 <?php wp_head(); ?>
+
+<!-- build:js /wp-content/themes/eneh-wp-theme/eneh-art/js/header.js -->
+<script src="../eneh/js/modernizr-2.6.2.min.js"></script>
+<script src="../eneh/js/html5.js"></script>
+<script src="../eneh/js/respond.min.js"></script>
+<!-- endbuild -->
+
 </head>
 
 <body <?php body_class(); ?>>

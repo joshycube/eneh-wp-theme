@@ -16,7 +16,7 @@
   }
   
   //wp_enqueue_style('parent', get_template_directory_uri() . '/style.css',false,'1.1','all');
-  wp_enqueue_style('lightbox', get_stylesheet_directory_uri() . '/lib/lightbox/css/lightbox.css',false,'1.1','all');
+  //wp_enqueue_style('lightbox', get_stylesheet_directory_uri() . '/lib/lightbox/css/lightbox.css',false,'1.1','all');
   //wp_enqueue_style('contactform', get_stylesheet_directory_uri() . '/css/contactform.css',false,'1.1','all');
 
 ?>
