@@ -313,6 +313,66 @@ table {
 
 /* Grid settings  */
 /* Breakpoints */
+/* Few helper classes */
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
+  .non-atat {
+    display: none;
+  }
+
+  .on-atat {
+    display: block;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@media only screen and (max-width: 33.875em) {
+  .non-tie {
+    display: none;
+  }
+
+  .on-tie {
+    display: block;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@media screen and (min-width: 78.75em) {
+  .non-ds {
+    display: none;
+  }
+
+  .on-ds {
+    display: block;
+  }
+}
+body {
+  font-size: 100%;
+}
+
 .clearfix {
   zoom: 1;
 }
@@ -328,6 +388,62 @@ table {
 
 /* Grid settings  */
 /* Breakpoints */
+/* Few helper classes */
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
+  .non-atat {
+    display: none;
+  }
+
+  .on-atat {
+    display: block;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@media only screen and (max-width: 33.875em) {
+  .non-tie {
+    display: none;
+  }
+
+  .on-tie {
+    display: block;
+  }
+}
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+/* 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@media screen and (min-width: 78.75em) {
+  .non-ds {
+    display: none;
+  }
+
+  .on-ds {
+    display: block;
+  }
+}
 ul {
   margin: 0;
   padding: 0;
@@ -451,6 +567,7 @@ nav.top-bar ul.title-area li h1 a {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
@@ -492,10 +609,6 @@ nav.top-bar ul.title-area li h1 a {
     background: #beae9d;
   }
 
-  .non-atat {
-    display: none;
-  }
-
   .title-area .hide {
     display: block !important;
   }
@@ -504,6 +617,7 @@ nav.top-bar ul.title-area li h1 a {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media only screen and (max-width: 33.875em) {
@@ -545,17 +659,13 @@ nav.top-bar ul.title-area li h1 a {
     background: #beae9d;
   }
 
-  .non-tie {
-    display: none !important;
-  }
-
   .title-area .hide {
     display: block !important;
   }
 }
 body {
   font-size: 100%;
-  background: url(img/bg1_old.png) 50% 0 repeat fixed;
+  background: url(img/bg3.png) 50% 0 repeat fixed;
 }
 
 a {
@@ -674,6 +784,7 @@ a {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media screen and (min-width: 78.75em) {
@@ -706,6 +817,7 @@ a {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
@@ -737,6 +849,7 @@ a {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
@@ -789,6 +902,7 @@ a {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media only screen and (max-width: 33.875em) {
@@ -869,6 +983,7 @@ img.framed {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media screen and (min-width: 78.75em) {
@@ -880,6 +995,7 @@ img.framed {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
@@ -895,6 +1011,7 @@ img.framed {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
@@ -910,6 +1027,7 @@ img.framed {
  * 
  * Breakpoints should be determined by content not by devices.
  * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
  * 
  */
 @media only screen and (max-width: 33.875em) {
@@ -996,25 +1114,4 @@ img.framed {
   top: 0;
   display: block;
   z-index: 2;
-}
-
-.enehGal {
-  width: 380rem;
-  float: left;
-}
-.enehGal ul li {
-  display: table-cell;
-}
-
-.enehGal img {
-  border: 1rem solid #bcbdbc;
-}
-
-.galCollection {
-  margin-top: 4rem;
-}
-
-li.galItem {
-  display: table-cell;
-  padding-right: 10rem;
 }

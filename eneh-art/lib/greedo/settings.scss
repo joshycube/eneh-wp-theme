@@ -10,6 +10,7 @@ $gutter-width: 4;
    * 
    * Breakpoints should be determined by content not by devices.
    * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+   * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
    * 
    */
   
@@ -41,5 +42,42 @@ $gutter-width: 4;
     }
   }
   
+}
+
+/* Few helper classes */
+@include bp(atat) {
+  .non-atat {
+    display: none;
+  }
+  .on-atat {
+    display: block; 
+  }
+}
+
+@include bp(tiefighter) {
+  .non-tie {
+    display: none;
+  }
+  .on-tie {
+    display: block; 
+  }
+}
+
+@include bp(startdestroyer) {
+  .non-stard {
+    display: none;
+  }
+  .on-stard {
+    display: block; 
+  }
+}
+
+@include bp(deathstar) {
+  .non-ds {
+    display: none;
+  }
+  .on-ds {
+    display: block; 
+  }
 }
 
