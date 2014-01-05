@@ -1,6 +1,3 @@
-Eneh-wp-theme
-=============
-
 Eneh Wordpress themes - Eneh art
 ================================
 
