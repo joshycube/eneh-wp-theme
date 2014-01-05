@@ -24,11 +24,22 @@ if ( !defined('ABSPATH')) exit;
 
 <?php wp_head(); ?>
 
+<?php if(ENVIRONMENT == 'local' || ENVIRONMENT == 'dev'): ?>
+
+<!-- for dev purpose -->
+<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+
+<?php else: ?>
+
 <!-- build:js /wp-content/themes/eneh-wp-theme/eneh-art/js/header.js -->
-<script src="../eneh/js/modernizr-2.6.2.min.js"></script>
-<script src="../eneh/js/html5.js"></script>
-<script src="../eneh/js/respond.min.js"></script>
+  <script src="../eneh/js/modernizr-2.6.2.min.js"></script>
+  <script src="../eneh/js/html5.js"></script>
+  <script src="../eneh/js/respond.min.js"></script>
 <!-- endbuild -->
+
+<?php endif; ?>
 
 </head>
 

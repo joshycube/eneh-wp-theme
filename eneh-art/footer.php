@@ -18,10 +18,21 @@
 
 <?php endif; ?>
 
+<?php if(ENVIRONMENT == 'local' || ENVIRONMENT == 'dev'): ?>
+
+<!-- for dev purpose -->
+<script src="<?php echo get_template_directory_uri(); ?>/js/console.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/responsive-images.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
+
+<?php else: ?>
+
 <!-- build:js /wp-content/themes/eneh-wp-theme/eneh-art/js/footer.js -->
-    <script src="../eneh/js/console.js"></script>
-    <script src="../eneh/js/responsive-images.js"></script>
-    <script src="js/scripts.js"></script>
+  <script src="../eneh/js/console.js"></script>
+  <script src="../eneh/js/responsive-images.js"></script>
+  <script src="js/scripts.js"></script>
 <!-- endbuild -->
+
+<?php endif; ?>
 
 </body>
