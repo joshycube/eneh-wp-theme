@@ -69,9 +69,15 @@ Required WP plugins
 Templates
 =========
 
+Real word example
+=================
+- http://www.matesandor.hu
+
 TODO
 ====
 
+- Enviromnents
 - Greedo is content first but not mobile first yet
 - Identation issues (2 spaces should be applied everywhere)
 - Admin functions
+
