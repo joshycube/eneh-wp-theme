@@ -1,0 +1,181 @@
+#welcome
+  background: url(img/bg1.jpg) 50% 0 no-repeat fixed
+  min-height: 62.5em 
+  height: 62.5em 
+  margin: 0 auto 
+  width: 100% 
+  max-width: 120em 
+  position: relative
+  p
+    background: $widget-bg
+    color: #000
+    font-size: 1.333em
+    padding: 0.5em 0 0.5em 0
+    @include opacity(0.9)
+    @include single-box-shadow(#000, 1px, 1px, 10px, 1px)
+
+  h1
+    color: #fff
+    text-shadow: 1px 1px 0 #000 
+
+#about
+  p
+    color: #fff
+   
+#about
+  article
+    height: 34.9375em
+    position: absolute 
+    text-align: center 
+    top: 6.25em 
+    width: 100%
+    
+#welcome
+  article
+    height: 28.625em
+    position: absolute 
+    text-align: center 
+    top: 6.25em 
+    width: 100%
+
+#about
+  article
+    text-align: justify
+    p:first-child
+      @include fc(3)
+    p
+      @include fc(9)
+ 
+#art
+  background: url(img/bg2.png) 50% 0 repeat fixed 
+  min-height: 62.5em 
+  height: 18.75em 
+  margin: 0 auto 
+  width: 100% 
+  max-width: 120em
+  position: relative 
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8)
+  box-shadow: 0 0 50px rgba(0,0,0,0.8)
+
+@include bp(deathstar)
+  #art
+    article
+      height: 6.25em
+      position: absolute 
+      top: 9.375em 
+      width: 100%
+      #art-categories
+        clear: both
+        width: 60em
+        margin: 0 auto
+        text-align: center
+        display: block
+        li
+          @include fc(4)
+          text-align: center
+          display: inline-block
+        li:nth-child(4)
+          clear: left
+
+@include bp(stardestroyer)
+  #art
+    article
+      height: 6.25em
+      position: absolute 
+      top: 9.375em 
+      width: 100% 
+      #art-categories
+        clear: both
+        width: 60em
+        margin: 0 auto
+        display: block
+        li
+          @include fc(4)
+          text-align: center
+          display: inline-block
+        li:nth-child(4)
+          clear: left
+
+@include bp(atat)
+  #about
+    article
+      p:first-child
+        clear: both
+        float: none
+        text-align: center
+        @include fc(12)
+        margin-bottom: 2.5em
+      p
+        clear: both
+        width: 100%
+        float: none
+        color: #fff
+        @include fc(12)
+      
+  #art
+    article
+      height: 6.25em
+      position: absolute 
+      top: 9.375em 
+      width: 100% 
+      #art-categories
+        clear: both
+        width: 40em
+        margin: 0 auto
+        display: block
+        li
+          @include fc(6)
+          text-align: center
+          display: inline-block
+        li:nth-child(5)
+          clear: left
+          
+@include bp(tiefighter)  
+  #about
+    article
+      height: 100em
+      p:first-child
+        clear: both
+        float: none
+        text-align: center
+        @include fc(12)
+        margin-bottom: 2.5em
+      p
+        clear: both
+        width: 100%
+        float: none
+        color: #fff
+        @include fc(12)
+  #art
+    min-height: 106.25em
+    article
+      height: 6.25em
+      position: absolute 
+      top: 9.375em 
+      width: 100% 
+      #art-categories
+        clear: both
+        width: 100%
+        margin: 0 auto
+        display: block
+        li
+          @include fc(12)
+          text-align: center
+        
+a.jumpto
+  cursor: pointer
+ 
+img.framed
+  background: #fff
+  padding: 0.41em
+  box-shadow: 1px 1px 10px 1px #000
+  
+#art
+  h3
+    color: #fff
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: #000
+    text-transform: uppercase
+    font-size: 1.8em
+  ul li a img
+    position: relative

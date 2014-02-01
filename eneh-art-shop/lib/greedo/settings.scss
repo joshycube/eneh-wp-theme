@@ -1,0 +1,76 @@
+/* Grid settings  */
+$cols: 12;
+$col-width: 76;
+$gutter-width: 4;
+
+/* Breakpoints 
+ * 
+ * Breakpoints should be determined by content not by devices.
+ * http://tangledindesign.com/deciding-what-responsive-breakpoints-to-use/
+ * http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+ * 
+ */
+@mixin bp($point) {
+
+  @if $point == deathstar { 
+   @media screen and (min-width: 78.75em) {
+      @content;   
+    }
+  }
+
+  @else if $point == stardestroyer {
+    @media screen and (min-width: 60.9375em) and (max-width: 78.75em) {
+      @content; 
+    }
+  }
+  
+  @else if $point == atat {
+    @media only screen and (min-width: 33.875em) and (max-width: 60.9375em) {
+      @content; 
+    }
+  }
+  
+  @else if $point == tiefighter {
+    @media only screen and (max-width: 33.875em) {
+      @content; 
+    }
+  }
+  
+}
+
+@include bp(atat) {
+  .non-atat {
+    display: none;
+  }
+  .on-atat {
+    display: block; 
+  }
+}
+
+@include bp(tiefighter) {
+  .non-tie {
+    display: none;
+  }
+  .on-tie {
+    display: block; 
+  }
+}
+
+@include bp(startdestroyer) {
+  .non-stard {
+    display: none;
+  }
+  .on-stard {
+    display: block; 
+  }
+}
+
+@include bp(deathstar) {
+  .non-ds {
+    display: none;
+  }
+  .on-ds {
+    display: block; 
+  }
+}
+
