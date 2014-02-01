@@ -1,7 +1,7 @@
 body
   font-size: 100%
   background: url(img/bg3.png) 50% 0 repeat fixed
-
+ 
 a
   color: #000
   text-decoration: none
@@ -15,7 +15,7 @@ a
   padding: 0.5em
   width: 100%
   cursor: default
-  font-size: 0.8125em
+  font-size: 0.6875em
   @include opacity(0.9)
   @include box-sizing("border-box")
   @include single-box-shadow(#000, 1px, 1px, 10px, 1px)
@@ -26,9 +26,23 @@ a
     font-size: 1.2em
     &:last-child
       text-align: right
+
 .right
   text-align: right
-  float: right!important
+  float: right!important 
   
 #category
   padding-top: 3.125em
+
+@include bp(tiefighter)
+  #end
+    font-size: 0.625em
+    height: 8.4375em
+    div
+      margin: 0 auto
+      text-align: center
+      width: 99%
+      clear: both
+      margin-bottom: 0.625em
+    div:last-child
+      text-align: center

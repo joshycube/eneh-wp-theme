@@ -971,6 +971,54 @@ img.framed {
   position: relative;
 }
 
+#post article {
+  display: inline-block;
+  float: left;
+  width: 95.17544%;
+  margin: 0 2.41228%;
+  margin-top: 5.25em;
+  margin-bottom: 3.125em;
+  border-bottom: 1px solid #b8a896;
+  padding-bottom: 0.3125em;
+}
+#post article p {
+  color: #ebebeb;
+}
+#post article p:first-letter {
+  color: white;
+  font-size: 2em;
+}
+#post article h1 {
+  margin-top: 0;
+  font-size: 1.3125em;
+}
+#post article h1 a {
+  color: white;
+  text-transform: uppercase;
+  background: #b8a897;
+  padding: 0.3125em;
+}
+#post article .datetime {
+  float: right;
+  color: white;
+  padding: 0.5em;
+  background: #b8a897;
+  cursor: default;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.pager {
+  display: inline-block;
+  float: left;
+  width: 95.17544%;
+  margin: 0 2.41228%;
+  color: white;
+}
+.pager a {
+  color: white;
+}
+
 #category {
   width: 100%;
   margin: 0 auto;
@@ -1114,4 +1162,13 @@ img.framed {
   top: 0;
   display: block;
   z-index: 2;
+}
+
+#comments {
+  display: inline-block;
+  float: left;
+  width: 95.17544%;
+  margin: 0 2.41228%;
+  clear: both;
+  float: none;
 }

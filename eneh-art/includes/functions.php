@@ -6,12 +6,12 @@
   add_theme_support('post-thumbnails');
   set_post_thumbnail_size(520, 250, true);
     
-  if ( function_exists( 'add_image_size' ) ) { 
+  if ( function_exists( 'add_image_size' ) ) {  
     add_image_size( 'enehgal-smallest', 50, false);
     add_image_size( 'enehgal-smaller', 150, false);
     add_image_size( 'enehgal-small', 250, false);
     add_image_size( 'enehgal-med', 500, false );
-    add_image_size( 'enehgal-large', 900, false );
+    add_image_size( 'enehgal-large', false, 530 );
     add_image_size( 'enehgal-larger', 1000, false );
   }
   

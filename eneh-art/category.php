@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section id="category">
-<?php if(have_posts()) : ?>
+<?php if(have_posts()) : ?> 
 	
 	   <?php if (in_category('art')): ?>
 	   
@@ -23,11 +23,11 @@
 		      $smallest = basename($imgs[$c]['sizes']['enehgal-smallest']);
 		    ?>
 		    
-		    <div class="image-container"><img class="framed" src="<?=$imgs[$c]['sizes']['large']; ?>" alt="<?=$imgs[$c]['alt']; ?>" title="<?=$imgs[$c]['title']; ?>" data-src-base='<?=$base?>' 
+		    <div class="image-container"><img class="framed" src="<?=$imgs[$c]['sizes']['large']; ?>" alt="<?php if($imgs[$c]['alt'] != ''): ?><?=get_bloginfo('name'); ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['title']; ?> <?php else: ?> <?=get_bloginfo('name'); ?> - <?=$imgs[$c]['title']; ?><?php endif; ?>" title="<?=$imgs[$c]['title']; ?>" data-src-base='<?=$base?>' 
 							  data-src='<542:<?=$small; ?>,
                                                           <975:<?=$medium; ?>,
                                                           <1260:<?=$large; ?>,
-                                                          >1260:<?=$larger; ?>' /></div>
+                                                          >1260:<?=$large; ?>' /></div>
 		    
 		    
 		    <footer><?php the_content(); ?></footer>

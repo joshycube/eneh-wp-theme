@@ -39,7 +39,7 @@ ENEH.site = (function ($, doc, win, eneh) {
             opacity: 0.55,
           }, 10, function() {
             $('#artist-icon').parent().removeClass('hide');
-            $('footer').show(1000);
+            $('footer').fadeIn(1000);
             scrolled = true;
           });
 
@@ -49,14 +49,14 @@ ENEH.site = (function ($, doc, win, eneh) {
             opacity: 0.55,
           }, 10, function() {
             $('#artist-icon').parent().addClass('hide');
-            $('footer').hide();
+            $('footer').fadeOut();
             scrolled = false;
           });
 
         }
       });
     } else if(win.location.pathname.indexOf('category') === -1) {
-      $('footer').show(1000);
+      $('footer').fadeIn(1000);
     }
 
   }
@@ -105,9 +105,9 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
 
       $('.image-container').on('click', function() {
         if($('#menu-main').css('display') === 'none') {
-          $('.bottom-control').toggle();
-          $('.top-bar').toggle();
-          $('#menu-main').hide(500);
+          $('.bottom-control').toggle(1000);
+          $('.top-bar').toggle(1000);
+          $('#menu-main').fadeOut();
         }
       });
 
@@ -142,15 +142,15 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
         $(stage).removeClass('stage-image');
         var category  = document.getElementById('category'); 
         var nextstage = category.children[index];
-        $(nextstage).addClass('stage-image').removeClass('hide');
+        $(nextstage).addClass('stage-image').fadeIn().removeClass('hide');
       });
 
       $('.image-container').on('mouseover', function() {
-        $('.bottom-control').hide(500);
-        $('.top-bar').hide(500);
+        $('.bottom-control').fadeOut(500);
+        $('.top-bar').fadeOut(500);
       }).on('mouseleave', function() {
-        $('.bottom-control').show(500);
-        $('.top-bar').show(500);
+        $('.bottom-control').fadeIn(500);
+        $('.top-bar').fadeIn(500);
       });
     }
   }

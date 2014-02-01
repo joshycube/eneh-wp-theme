@@ -21,15 +21,22 @@
 #about
   p
     color: #fff
-    
-#welcome,
+   
 #about
+  article
+    height: 34.9375em
+    position: absolute 
+    text-align: center 
+    top: 6.25em 
+    width: 100%
+    
+#welcome
   article
     height: 28.625em
     position: absolute 
     text-align: center 
     top: 6.25em 
-    width: 100% 
+    width: 100%
 
 #about
   article
@@ -123,9 +130,10 @@
         li:nth-child(5)
           clear: left
           
-@include bp(tiefighter)
+@include bp(tiefighter)  
   #about
     article
+      height: 100em
       p:first-child
         clear: both
         float: none
