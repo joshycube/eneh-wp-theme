@@ -240,8 +240,8 @@ module.exports = function (grunt) {
                         '{,*/}*.php',
 			'includes',
 			'lib',
-			'my-templates',
-		        'style.css'
+			'my-templates'
+		        //'style.css'
                     ]
                 }, {
 		  expand: true,
