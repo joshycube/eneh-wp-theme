@@ -1,6 +1,14 @@
 Eneh Wordpress themes - Eneh art
 ================================
 
+Build
+====================
+
+Presume that you already have nodejs installed with npm, bower, grunt and compass with compass-normalize
+
+- sudo npm install
+- grunt build
+
 Grid system - Greedo
 ====================
 

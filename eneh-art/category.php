@@ -23,12 +23,25 @@
 		      $smallest = basename($imgs[$c]['sizes']['enehgal-smallest']);
 		    ?>
 		    
-		    <div class="image-container"><img class="framed" src="<?=$imgs[$c]['sizes']['large']; ?>" alt="<?php if($imgs[$c]['alt'] != ''): ?><?=get_bloginfo('name'); ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['title']; ?> <?php else: ?> <?=get_bloginfo('name'); ?> - <?=$imgs[$c]['title']; ?><?php endif; ?>" title="<?=$imgs[$c]['title']; ?>" data-src-base='<?=$base?>' 
-							  data-src='<542:<?=$small; ?>,
-                                                          <975:<?=$medium; ?>,
-                                                          <1260:<?=$large; ?>,
-                                                          >1260:<?=$large; ?>' /></div>
+		    <?php if ($c < 3): ?>
 		    
+		      <div class="image-container"><img class="framed mainimg" data-msrc="<?=$imgs[$c]['sizes']['large']; ?>" src="<?=$imgs[$c]['sizes']['large']; ?>" alt="<?php if($imgs[$c]['alt'] != ''): ?><?=get_bloginfo('name'); ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['title']; ?> <?php else: ?> <?=get_bloginfo('name'); ?> - <?=$imgs[$c]['title']; ?><?php endif; ?>" title="<?=$imgs[$c]['title']; ?>" data-src-base='<?=$base?>' 
+							    data-src='<542:<?=$small; ?>,
+							    <975:<?=$medium; ?>,
+							    <1260:<?=$large; ?>,
+							    >1260:<?=$large; ?>' /></div>
+		    
+		    <?php else: ?>
+		    
+		    
+		      <div class="image-container"><img class="framed mainimg" data-msrc="<?=$imgs[$c]['sizes']['large']; ?>" src="" alt="<?php if($imgs[$c]['alt'] != ''): ?><?=get_bloginfo('name'); ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['alt']; ?> - <?=$imgs[$c]['title']; ?> <?php else: ?> <?=get_bloginfo('name'); ?> - <?=$imgs[$c]['title']; ?><?php endif; ?>" title="<?=$imgs[$c]['title']; ?>" data-src-base='<?=$base?>' 
+							    data-src='<542:<?=$small; ?>,
+							    <975:<?=$medium; ?>,
+							    <1260:<?=$large; ?>,
+							    >1260:<?=$large; ?>' /></div>
+		    
+		    
+		    <?php endif; ?>
 		    
 		    <footer><?php the_content(); ?></footer>
 		  </article>
