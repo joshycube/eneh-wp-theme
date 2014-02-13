@@ -141,8 +141,12 @@ ENEH.enehgal = (function ($, doc, win, eneh) {
         $(stage).addClass('hide');
         $(stage).removeClass('stage-image');
         var category  = document.getElementById('category'); 
-        var nextstage = category.children[index];
-        $(nextstage).addClass('stage-image').fadeIn().removeClass('hide');
+        var $nextstage = $(category.children[index]);
+	var img  = $nextstage.find('.mainimg');
+	var nsrc = $(img).data('msrc');
+	$(img).attr('src', nsrc); 
+	makeImagesResponsive();
+        $nextstage.addClass('stage-image').fadeIn().removeClass('hide');
       });
 
       $('.image-container').on('mouseover', function() {

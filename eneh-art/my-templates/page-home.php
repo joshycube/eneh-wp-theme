@@ -44,7 +44,7 @@ Template Name: Home
       </li>
       <li>
 	<a href="/category/art"><img class="framed" src="<?php echo get_stylesheet_directory_uri(); ?>/img/categories/all.jpg" /></a>
-	<h3>Összes</h3>
+	<h3>Aktuális</h3>
       </li>
     </ul>
   </article>
