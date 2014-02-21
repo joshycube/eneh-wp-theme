@@ -88,4 +88,8 @@ TODO
 - Greedo is content first but not mobile first yet
 - Identation issues (2 spaces should be applied everywhere)
 - Admin functions
+- DJAX option
+- Better JS separation (components)
+- Tear down Grunt script
+- Gulp script
 
