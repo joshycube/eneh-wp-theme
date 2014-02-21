@@ -10,29 +10,44 @@
 <?php if($meta_opt == "jquery"): ?>
  
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
 <?php else: ?>
 
-	<script>document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/zepto.min.js"><\/script>')</script>
+	<script>document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/zepto.min.js"><\/script>')</script>
 
 <?php endif; ?>
 
 <?php if(ENVIRONMENT == 'local' || ENVIRONMENT == 'dev'): ?>
 
 <!-- for dev purpose -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/console.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/responsive-images.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/fitvids.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/console.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/responsive-images.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/fitvids.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/framework/core/main.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/framework/core/utils.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/framework/core/api.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/framework/core/core.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/components/navigation.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/components/effects.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/components/gallery.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/framework/start.js"></script>
 
 <?php else: ?>
 
 <!-- build:js /wp-content/themes/eneh-wp-theme/eneh-art/js/footer.js -->
-  <script src="../eneh/js/console.js"></script>
-  <script src="../eneh/js/responsive-images.js"></script>
-  <script src="../eneh/js/fitvids.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="../eneh/js/vendor/console.js"></script>
+  <script src="../eneh/js/vendor/responsive-images.js"></script>
+  <script src="../eneh/js/vendor/fitvids.js"></script>
+  <script src="../eneh/js/framework/core/main.js"></script>
+  <script src="../eneh/js/framework/core/utils.js"></script>
+  <script src="../eneh/js/framework/core/api.js"></script>
+  <script src="../eneh/js/framework/core/core.js"></script>
+  <script src="js/components/navigation.js"></script>
+  <script src="js/components/effects.js"></script>
+  <script src="js/components/gallery.js"></script>
+  <script src="../eneh/js/framework/start.js"></script>
 <!-- endbuild -->
 
 <?php endif; ?>

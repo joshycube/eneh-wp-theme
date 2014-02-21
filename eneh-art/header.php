@@ -1,8 +1,4 @@
-<?php
-
-if ( !defined('ABSPATH')) exit;
-
-?>
+<?php if ( !defined('ABSPATH')) exit; ?>
 
 <!doctype html>
 <!--[if !IE]>      <html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
@@ -27,16 +23,16 @@ if ( !defined('ABSPATH')) exit;
 <?php if(ENVIRONMENT == 'local' || ENVIRONMENT == 'dev'): ?>
 
 <!-- for dev purpose -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/html5.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/respond.min.js"></script>
 
 <?php else: ?>
 
 <!-- build:js /wp-content/themes/eneh-wp-theme/eneh-art/js/header.js -->
-  <script src="../eneh/js/modernizr-2.6.2.min.js"></script>
-  <script src="../eneh/js/html5.js"></script>
-  <script src="../eneh/js/respond.min.js"></script>
+  <script src="../eneh/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="../eneh/js/vendor/html5.js"></script>
+  <script src="../eneh/js/vendor/respond.min.js"></script>
 <!-- endbuild -->
 
 <?php endif; ?>

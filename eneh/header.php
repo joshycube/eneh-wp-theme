@@ -1,8 +1,4 @@
-<?php
-
-if ( !defined('ABSPATH')) exit;
-
-?>
+<?php if ( !defined('ABSPATH')) exit; ?>
 
 <!doctype html>
 <!--[if !IE]>      <html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
@@ -21,7 +17,7 @@ if ( !defined('ABSPATH')) exit;
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <?php wp_enqueue_style('eneh', get_stylesheet_uri(), false, '1.0.0');?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/respond.min.js"></script>
 
 <?php wp_head(); ?>
 </head>

@@ -14,15 +14,15 @@
 <?php if($meta_opt == "jquery"): ?>
  
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
 <?php else: ?>
 
-	<script>document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/zepto.min.js"><\/script>')</script>
+	<script>document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/zepto.min.js"><\/script>')</script>
 
 <?php endif; ?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/console.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.6.2.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/console.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/respond.min.js"></script>
 </body>
